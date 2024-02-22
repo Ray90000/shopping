@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'practice_2',
       component: () => import('../views/PracticeView2.vue')
     },
+    {
+      path: '/practice_3',
+      name: 'practice_3',
+      component: () => import('../views/PracticeView3.vue')
+    },
   ]
 })
 
