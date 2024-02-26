@@ -36,6 +36,11 @@ export default {
           ? this.lastName2 + " " + this.firstName2
           : "";
       },
+      set(newValue) {
+        if (newValue.split(" ").length === 2) {
+          [this.lastName2, this.firstName2] = newValue.split(" ");
+        }
+      },
     },
     fullAddress2() {
       return (
@@ -72,7 +77,7 @@ export default {
       <div>區域: <input type="text" v-model="area" /></div>
       <div>位址: <input type="text" v-model="address" /></div>
       <ul>
-        <li>全名:<input type="text" v-model="fullName2"/></li>
+        <li>全名:<input type="text" v-model="fullName2" /></li>
         <li>完整地址: {{ fullAddress2 }}</li>
       </ul>
     </div>

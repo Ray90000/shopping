@@ -11,7 +11,8 @@ import { RouterLink, RouterView } from "vue-router";
         <RouterLink to="/practice">Practice1</RouterLink>
         <RouterLink to="/practice_2">Practice2</RouterLink>
         <RouterLink to="/practice_3">v-on</RouterLink>
-        <RouterLink to="/part4">Part4</RouterLink>
+        <RouterLink to="/part4">Part4-1</RouterLink>
+        <RouterLink to="/part4_2">Part4-2</RouterLink>
       </nav>
     </div>
   </header>
